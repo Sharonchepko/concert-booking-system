@@ -1,0 +1,31 @@
+<html>
+<head>  
+  <title>Concert Ticket Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Concert Ticket Booking</h1>
+    <p>Welcome to our concert ticket booking website!</p>
+    <h2> Book tickets</h2>
+    <form action="connect.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="num_tickets">Number of Tickets:</label>
+        <input type="number" id="num_tickets" name="num_tickets" required><br><br>
+        
+        <label for="payment_method">Payment Method:</label>
+        <select id="payment_method" name="payment_method" required>
+            <option value="credit_card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="bank_transfer">Bank Transfer</option>
+        </select><br><br>
+
+
+        
+        <input type="submit" value="Book Tickets">`
+    </form>
+</body>
